@@ -19,6 +19,7 @@ var isMotor3 = false;
 
 firebase.database().ref('player1/movement').on('value', function(snapshot) {
     var snap = snapshot.val();
+    movementVal = snap;
     console.log("SNAP: " + snap);
 
     if(snap = "STOP") {
